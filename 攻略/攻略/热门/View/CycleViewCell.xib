@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cycleViewCell" id="gTV-IL-0wX" customClass="CycleViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="251"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="271"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ewv-Yk-gUh" customClass="SDCycleScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ewv-Yk-gUh" secondAttribute="bottom" id="09s-A9-8iG"/>
+                <constraint firstAttribute="trailing" secondItem="Ewv-Yk-gUh" secondAttribute="trailing" id="3jI-8y-326"/>
+                <constraint firstItem="Ewv-Yk-gUh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UZA-JD-KrT"/>
+                <constraint firstItem="Ewv-Yk-gUh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vgi-ul-26R"/>
+                <constraint firstAttribute="trailing" secondItem="Ewv-Yk-gUh" secondAttribute="trailing" id="VsY-91-z6r">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Ewv-Yk-gUh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZGd-4a-a0k"/>
+                <constraint firstItem="Ewv-Yk-gUh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jWS-at-aFz"/>
+                <constraint firstAttribute="bottom" secondItem="Ewv-Yk-gUh" secondAttribute="bottom" id="jo6-Qr-LlU"/>
+            </constraints>
+            <size key="customSize" width="434" height="271"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Ewv-Yk-gUh"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="09s-A9-8iG"/>
+                    <exclude reference="3jI-8y-326"/>
+                    <exclude reference="UZA-JD-KrT"/>
+                    <exclude reference="Vgi-ul-26R"/>
+                    <exclude reference="VsY-91-z6r"/>
+                    <exclude reference="ZGd-4a-a0k"/>
+                    <exclude reference="jWS-at-aFz"/>
+                    <exclude reference="jo6-Qr-LlU"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Ewv-Yk-gUh"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="09s-A9-8iG"/>
+                    <include reference="3jI-8y-326"/>
+                    <include reference="UZA-JD-KrT"/>
+                    <include reference="Vgi-ul-26R"/>
+                    <include reference="VsY-91-z6r"/>
+                    <include reference="ZGd-4a-a0k"/>
+                    <include reference="jWS-at-aFz"/>
+                    <include reference="jo6-Qr-LlU"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cycleView" destination="Ewv-Yk-gUh" id="zTw-RF-xYB"/>
+            </connections>
+            <point key="canvasLocation" x="383" y="441.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
