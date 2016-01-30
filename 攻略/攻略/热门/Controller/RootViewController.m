@@ -56,6 +56,7 @@ static NSInteger n = 0;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:str parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self requestData:responseObject];
+        NSLog(@"%@", responseObject);
         [self.collectionView.mj_header endRefreshing];
         [self.collectionView.mj_footer endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
